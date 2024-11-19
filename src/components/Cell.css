@@ -1,0 +1,22 @@
+.cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid #ddd;
+  outline: none;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.cell:focus {
+  border: 2px solid #007BFF;
+}
+
+input.cell.conflict {
+  background-color: #a91d1d !important; 
+  border: 2px solid red !important;     
+}
+.cell.hinted {
+  background-color: yellow; 
+}

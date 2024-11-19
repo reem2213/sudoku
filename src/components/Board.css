@@ -1,0 +1,119 @@
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .cell:focus {
+    border: 2px solid #007BFF;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(9, 40px);
+    grid-template-rows: repeat(9, 40px);
+    gap: 2px;
+    margin: 20px;
+    border: 2px solid #000;
+    margin-top: 30px;
+
+  }
+  
+  .board .cell:nth-child(3n + 3) {
+    border-right: 2px solid #000;
+  }
+  
+  .board .cell:nth-child(3n + 1) {
+    border-left: 2px solid #000;
+  }
+
+  
+  .board .cell:nth-child(27n + 1),
+  .board .cell:nth-child(27n + 2),
+  .board .cell:nth-child(27n + 3) {
+    border-top: 2px solid #000;
+  }
+  .board .cell:nth-child(27n + 4),
+  .board .cell:nth-child(27n + 5),
+  .board .cell:nth-child(27n + 6) {
+    border-top: 2px solid #000;
+  }
+  .board .cell:nth-child(27n +7),
+  .board .cell:nth-child(27n + 8),
+  .board .cell:nth-child(27n + 9) {
+    border-top: 2px solid #000;
+  }
+  
+  
+  .board .cell:nth-child(27n + 19),
+  .board .cell:nth-child(27n + 20),
+  .board .cell:nth-child(27n + 21) {
+    border-bottom: 2px solid #000;
+  }
+  .difficulty-buttons {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .difficulty-buttons button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .difficulty-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+.hinted {
+  background-color: yellow;
+}
+
+
+
+
+body{
+  background-color: rgb(68, 68, 209);
+}
+.show-conflicts-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 150px;
+  transition: background-color 0.3s;
+}
+
+
+.show-conflicts-button:hover {
+  background-color: #d32f2f;
+  
+
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+}
